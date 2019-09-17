@@ -1,9 +1,11 @@
+/* reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* main section */
 .main {
     height: 100vh;
 }
@@ -12,6 +14,8 @@
 .main .message {
     width: 50%;
 }
+
+/* main form */
 
 .form {
     display: flex;
@@ -55,14 +59,6 @@
 }
 
 
-
-.message {
-    position: relative;
-    background-color: #2D2B55;
-    height: 100vh;
-
-}
-
 .form-input [type="text"] {
     margin-bottom: 40px;
 }
@@ -87,6 +83,10 @@
     cursor: pointer;
 }
 
+.forgot:hover {
+    color: #2D2B55;
+}
+
 .checked {
     margin-bottom: 60px;
 }
@@ -106,7 +106,8 @@
 }
 
 .submit-button button:hover {
-    opacity: .8;
+    color: #2D2B55;
+    background-color: white;
 }
 
 .sign-up {
@@ -123,6 +124,19 @@
 .sign-up .sign {
     font-weight: 700;
     cursor: pointer;
+}
+
+.sign-up .sign:hover {
+    color: #2D2B55;
+}
+
+
+/* teams message */
+.message {
+    position: relative;
+    background-color: #2D2B55;
+    height: 100vh;
+
 }
 
 
