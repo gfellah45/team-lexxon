@@ -1,94 +1,68 @@
-/* reset */
-* {
-    margin: 0;
-    padding: 0;
+body{
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background: #ccc;
+    font-family: Roboto; 
 }
 
-/* main section */
-.main {
-    height: 100vh;
+.login-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.login-logo{
+    position: relative;
+    margin-left: -41.5%;
+}
+.login-logo img{
+    position: absolute;
+    width: 20%;
+    margin-top: 19%;
+    background: #282726;
+    border-radius: 4.5rem;
+    padding: 5%;
+}
+.login-details{
+    padding: 9%;
+    background:#E5E5E5;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
 }
 
-.main .form,
-.main .message {
+.message{
+    padding: 9%;
+    background: #2D2B55;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login{
+    font-weight: 600;
     width: 50%;
+    color: #E5E5E5;
+    background-color: #2D2B55;
+    border: none;
+    border-radius: 1.5rem;
+    padding:2%;
 }
 
-/* main form */
-
-.form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #E5E5E5
-}
-
-.form form {
-    height: 80%;
-}
-
-.form .title h2 {
-    font-size: 48px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 56px;
-    color: rgba(0, 0, 0, 0.35);
-    padding-bottom: .5rem
-}
-
-.form .lex {
-    color: #000000;
-}
-
-.form .title p {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1rem;
-    line-height: 1rem;
-    padding-bottom: 3rem;
-    color: rgba(58, 57, 53, 0.85);
-}
-
-.form .title .login {
-    color: #2D2B55;
-    font-weight: 700;
-}
-
-
-.form-input [type="text"] {
-    margin-bottom: 40px;
+.form-input [type="email"] {
+    margin-bottom: 2rem;
 }
 
 .remember {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 16px;
     color: #494845;
 }
 
 .forgot {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 16px;
     color: #494845;
     float: right;
     cursor: pointer;
 }
-
-.forgot:hover {
+.forgot:hover{
     color: #2D2B55;
-}
-
-.checked {
-    margin-bottom: 60px;
 }
 
 .submit-button {
@@ -106,18 +80,12 @@
 }
 
 .submit-button button:hover {
-    color: #2D2B55;
-    background-color: white;
+    opacity: .8;
 }
 
 .sign-up {
-    text-align: center;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 16px;
-
     color: #494845;
 }
 
@@ -126,46 +94,29 @@
     cursor: pointer;
 }
 
-.sign-up .sign:hover {
-    color: #2D2B55;
-}
-
-
-/* teams message */
-.message {
-    position: relative;
-    background-color: #2D2B55;
-    height: 100vh;
-
-}
-
-
-.inner-card {
-    position: absolute;
-    top: 30%;
-    left: 30%;
+.inner-card { 
+    margin: 2.3rem auto;
+    padding: 2rem 0;
     background: #D7C07A;
     border-radius: 15px;
 }
 
-
-.message .inner-card p {
-    text-align: center;
-    margin-left: 25%;
-    width: 50%;
+.inner-card p {
+    padding: 10px;    
     line-height: 17px;
     letter-spacing: 0.06em;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-
 }
 
-.message .inner-card h2 {
-    text-align: center;
-    padding: 12px 0;
+.inner-card h2 {
+    padding: 5px 0;
+    margin: 0;
     color: #000000;
-    font-family: Roboto;
-    font-style: normal;
     font-weight: bold;
 }
+
+@media screen and (max-width: 380px){
+    .message{
+        height: 10vh;
+    }
+}
+
